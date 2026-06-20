@@ -22,7 +22,7 @@ async function obtenerProyectos() {
 
   try {
     const respuesta = await fetch(API_URL);
-    const proyectos = await respuesta.get();
+    const proyectos = await respuesta.json();
 
     // Limpiar el mensaje de carga
     contenedor.innerHTML = "";
