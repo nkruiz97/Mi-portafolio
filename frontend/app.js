@@ -1,5 +1,5 @@
 // Dirección de nuestra API de Django
-const API_URL = "http://127.0.0.1:8000/api/proyectos/";
+const API_URL = "https://mi-portafolio-backend.onrender.com/api/proyectos/";
 
 async function cargarProyectos() {
   const contenedor = document.getElementById("contenedor-proyectos");
