@@ -3,27 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio Desarrollador</title>
+    <title>Portafolio — Dev Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Hola, soy un Desarrollador Web</h1>
-      <p>
-        Bienvenido a mi portafolio. Aquí puedes ver mis proyectos cargados desde
-        Django.
-      </p>
-    </header>
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#hero">Dev<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <main>
-      <h2>Mis Proyectos</h2>
-      <section id="contenedor-proyectos" class="grid-proyectos">
-        <p>Cargando proyectos...</p>
-      </section>
-    </main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div>
+          <div class="hero-eyebrow">Desarrollador Web Full Stack</div>
+          <h1 class="hero-title">
+            Construyo
+            <span class="accent">productos digitales</span>
+            que funcionan.
+          </h1>
+          <p class="hero-sub">
+            Del diseño de arquitectura al detalle de UI — llevo ideas desde cero
+            hasta producción con código limpio, escalable y centrado en el
+            usuario.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contact" class="btn btn-outline">Hablemos</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-bar">
+              <span class="r"></span><span class="y"></span
+              ><span class="g"></span>
+            </div>
+            <div class="cm">// stack.config.ts</div>
+            <br />
+            <span class="kw">const</span> developer = {<br />
+            &nbsp;&nbsp;frontend: [<span class="str">'HTML/CSS/JS'</span
+            >],<br />
+            &nbsp;&nbsp;backend: [<span class="str">'Django'</span>,
+            <span class="str">'REST API'</span>],<br />
+            &nbsp;&nbsp;db: [<span class="str">'SQLite'</span>],<br />
+            &nbsp;&nbsp;devops: [<span class="str">'Render'</span>,
+            <span class="str">'GitHub Pages'</span>],<br />
+            &nbsp;&nbsp;<span class="fn">disponible</span>:
+            <span class="str">true</span><br />
+            }
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- SOBRE MÍ -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-label">Sobre mí</div>
+        <h2 class="section-title fade-up">
+          Pasión por el código,<br />obsesión por el detalle.
+        </h2>
+        <div class="about-grid">
+          <div class="about-avatar fade-up">
+            <span class="avatar-placeholder">{ }</span>
+            <div class="avatar-badge">💼 Disponible para proyectos</div>
+          </div>
+          <div class="about-text fade-up">
+            <p>
+              Soy desarrollador web full stack con experiencia construyendo
+              aplicaciones robustas de extremo a extremo. Me muevo con comodidad
+              tanto en el frontend como en el backend, y disfruto especialmente
+              los momentos donde la arquitectura y la experiencia de usuario se
+              encuentran.
+            </p>
+            <p>
+              Trabajo con equipos remotos y clientes directos. Me interesa
+              resolver problemas reales con soluciones simples, código
+              mantenible y foco en el rendimiento.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-num">3+</div>
+                <div class="stat-lbl">Años de experiencia</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">20+</div>
+                <div class="stat-lbl">Proyectos entregados</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">100%</div>
+                <div class="stat-lbl">Commits con propósito</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="section-label" style="color: var(--gold)">Habilidades</div>
+        <h2 class="section-title light fade-up">
+          Stack completo,<br />de punta a punta.
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-card fade-up">
+            <span class="skill-icon">⚡</span>
+            <div class="skill-name">Frontend</div>
+            <div class="skill-tags">
+              <span class="tag">JavaScript (ES6)</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">Fetch API</span>
+              <span class="tag">UI/UX Design</span>
+            </div>
+          </div>
+          <div class="skill-card fade-up">
+            <span class="skill-icon">🔧</span>
+            <div class="skill-name">Backend</div>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Django REST Framework</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-card fade-up">
+            <span class="skill-icon">🗄️</span>
+            <div class="skill-name">Bases de datos</div>
+            <div class="skill-tags">
+              <span class="tag">SQLite</span>
+              <span class="tag">ORM Django</span>
+            </div>
+          </div>
+          <div class="skill-card fade-up">
+            <span class="skill-icon">☁️</span>
+            <div class="skill-name">DevOps & Cloud</div>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub Pages</span>
+              <span class="tag">Render.com</span>
+              <span class="tag">WhiteNoise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-label">Proyectos</div>
+        <h2 class="section-title fade-up">
+          Trabajo que habla<br />por sí solo.
+        </h2>
+
+        <!-- Aquí es donde JavaScript inyectará tus proyectos de Django -->
+        <div class="projects-grid" id="contenedor-proyectos">
+          <p style="color: var(--muted); grid-column: 1/-1; text-align: center">
+            Conectando al servidor y cargando proyectos...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="contact-inner">
+          <div class="section-label">Contacto</div>
+          <h2 class="section-title light fade-up">
+            ¿Tenés un proyecto<br />en mente?
+          </h2>
+          <p class="contact-sub">
+            Estoy disponible para proyectos freelance, colaboraciones y
+            posiciones full-time. Contame qué tenés en mente.
+          </p>
+          <form class="contact-form fade-up" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" placeholder="¿De qué se trata?" />
+            </div>
+            <div class="form-group">
+              <label for="msg">Mensaje</label>
+              <textarea
+                id="msg"
+                rows="5"
+                placeholder="Contame sobre tu proyecto..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="justify-self: start"
+            >
+              Enviar mensaje
+            </button>
+          </form>
+          <div class="contact-links">
+            <a class="contact-link" href="#">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a class="contact-link" href="#">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a class="contact-link" href="#">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Email directo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <p>© 2026 - Creado con HTML, CSS, JS y Django</p>
+      <a class="nav-logo" href="#hero">Dev<span>.</span></a>
+      <p>© 2026 · Construido con código limpio y café.</p>
     </footer>
 
     <script src="app.js"></script>
