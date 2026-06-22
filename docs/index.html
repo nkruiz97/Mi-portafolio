@@ -21,56 +21,8 @@
     <div class="page">
       <nav>
         <a href="#" class="nav-logo" aria-label="CoreDev Home">
-          <svg
-            class="logo-svg"
-            viewBox="0 0 135 40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <!-- Isotipo: Cubo Isométrico (Estructura Core) -->
-            <g
-              class="logo-iso"
-              fill="none"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <!-- Aristas Exteriores del Cubo -->
-              <path
-                d="M22 6 L34 13 L34 27 L22 34 L10 27 L10 13 Z"
-                stroke="url(#cube-grad)"
-              />
-              <!-- Líneas de Perspectiva Interna que convergen al centro -->
-              <path d="M22 6 L22 17" stroke="url(#cube-grad)" opacity="0.7" />
-              <path d="M10 13 L22 17" stroke="url(#cube-grad)" opacity="0.7" />
-              <path d="M34 13 L22 17" stroke="url(#cube-grad)" opacity="0.7" />
-              <!-- El "Core" (Núcleo flotante central con brillo) -->
-              <circle
-                cx="22"
-                cy="22"
-                r="3.5"
-                fill="var(--accent)"
-                class="cube-core"
-              />
-            </g>
-
-            <!-- Wordmark: Texto CoreDev alineado -->
-            <text x="46" y="25" class="logo-text-core">Core</text>
-            <text x="80" y="25" class="logo-text-dev">Dev</text>
-
-            <!-- Gradiente que se adapta a tu paleta actual -->
-            <defs>
-              <linearGradient
-                id="cube-grad"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stop-color="var(--accent2)" />
-                <stop offset="100%" stop-color="var(--accent)" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <span class="logo-core">Core</span><span class="logo-dev">dev</span
+          ><span class="logo-cursor">_</span>
         </a>
         <ul class="nav-links">
           <li><a href="#about">Sobre mí</a></li>

@@ -147,52 +147,53 @@ nav {
   border: 1px solid var(--border);
   border-radius: 100px;
 }
+
+/* Variante 3: Wordmark Tipográfico Premium */
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
-  height: 34px; /* Calibrado para balancear la geometría del cubo */
-  transition: transform 0.2s ease;
+  font-size: 1.05rem;
+  letter-spacing: -0.4px;
+  user-select: none;
+  transition: opacity 0.2s ease;
 }
 .nav-logo:hover {
-  transform: scale(1.02);
+  opacity: 0.9;
 }
-.logo-svg {
-  height: 100%;
-  width: auto;
-  overflow: visible;
-}
-/* Animación sutil de pulsación para el Core central */
-.cube-core {
-  transform-origin: 22px 22px;
-  animation: corePulse 3s ease-in-out infinite;
-}
-@keyframes corePulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.9;
-  }
-  50% {
-    transform: scale(1.18);
-    opacity: 1;
-    filter: drop-shadow(0 0 4px var(--accent));
-  }
-}
-/* Estilos tipográficos dentro del SVG */
-.logo-text-core {
+.logo-core {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 15px;
-  fill: var(--bright);
-  letter-spacing: -0.3px;
+  color: var(--bright);
 }
-.logo-text-dev {
+.logo-dev {
   font-family: var(--mono);
   font-weight: 400;
-  font-size: 14px;
-  fill: var(--dim);
+  color: var(--dim);
+  margin-left: 1px;
 }
+/* El "Gesto": un cursor de código sutil con tu gradiente activo */
+.logo-cursor {
+  display: inline-block;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-weight: 700;
+  margin-left: 2px;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logoBlink 2.5s infinite;
+}
+@keyframes logoBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
 .nav-links {
   display: flex;
   gap: 1.6rem;
