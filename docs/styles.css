@@ -148,15 +148,50 @@ nav {
   border-radius: 100px;
 }
 .nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 34px; /* Calibrado para balancear la geometría del cubo */
+  transition: transform 0.2s ease;
+}
+.nav-logo:hover {
+  transform: scale(1.02);
+}
+.logo-svg {
+  height: 100%;
+  width: auto;
+  overflow: visible;
+}
+/* Animación sutil de pulsación para el Core central */
+.cube-core {
+  transform-origin: 22px 22px;
+  animation: corePulse 3s ease-in-out infinite;
+}
+@keyframes corePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 1;
+    filter: drop-shadow(0 0 4px var(--accent));
+  }
+}
+/* Estilos tipográficos dentro del SVG */
+.logo-text-core {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 1rem;
-  color: var(--bright);
-  text-decoration: none;
+  font-size: 15px;
+  fill: var(--bright);
   letter-spacing: -0.3px;
 }
-.nav-logo span {
-  color: var(--accent);
+.logo-text-dev {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 14px;
+  fill: var(--dim);
 }
 .nav-links {
   display: flex;
@@ -879,37 +914,4 @@ footer p {
   .dot {
     animation: none;
   }
-}
-.nav-logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  height: 32px; /* Controla la altura visual en la barra */
-  transition: transform 0.2s ease;
-}
-
-.nav-logo:hover {
-  transform: scale(1.02);
-}
-
-.logo-svg {
-  height: 100%;
-  width: auto;
-  overflow: visible;
-}
-
-/* Estilos para el texto dentro del SVG */
-.logo-text-core {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 15px;
-  fill: var(--bright);
-  letter-spacing: -0.3px;
-}
-
-.logo-text-dev {
-  font-family: var(--mono);
-  font-weight: 400;
-  font-size: 14px;
-  fill: var(--dim);
 }
